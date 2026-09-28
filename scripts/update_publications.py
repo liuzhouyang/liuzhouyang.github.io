@@ -415,6 +415,8 @@ def write_yaml(records: list[dict], cfg: dict) -> None:
             lines.append(f"  dblp: {yaml_quote(r['dblp'])}")
         if r.get("bibtex"):
             lines.append(f"  bibtex: {yaml_quote(r['bibtex'])}")
+        if r.get("copy_bibtex"):
+            lines.append(f"  copy_bibtex: {yaml_quote(r['copy_bibtex'])}")
         lines.append("")
     OUTPUT_PATH.write_text("\n".join(lines), encoding="utf-8")
 

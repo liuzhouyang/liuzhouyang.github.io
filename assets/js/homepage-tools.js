@@ -49,38 +49,10 @@
     });
   });
 
-  function bibtexFor(button) {
-    var title = button.dataset.bibTitle || '';
-    var authors = (button.dataset.bibAuthors || '')
-      .split(',')
-      .map(function (x) { return x.trim(); })
-      .filter(Boolean)
-      .join(' and ');
-    var venue = button.dataset.bibVenue || '';
-    var year = button.dataset.bibYear || '';
-    var url = button.dataset.bibUrl || '';
-    var shortKey = (button.dataset.bibKey || 'paper').replace(/[^a-z0-9]+/gi, '');
-    var key = 'liu' + year + shortKey;
-
-    var article = /TKDE|TMLR|Transactions|Journal/i.test(venue);
-    var type = article ? 'article' : 'inproceedings';
-    var venueField = article ? 'journal' : 'booktitle';
-
-    var lines = [
-      '@' + type + '{' + key + ',',
-      '  title = {' + title + '},',
-      '  author = {' + authors + '},',
-      '  ' + venueField + ' = {' + venue + '},',
-      '  year = {' + year + '}' + (url ? ',' : '')
-    ];
-    if (url) lines.push('  url = {' + url + '}');
-    lines.push('}');
-    return lines.join('\n');
-  }
-
   document.querySelectorAll('.copy-bibtex').forEach(function (button) {
     button.addEventListener('click', function () {
-      copyText(bibtexFor(button), button);
+      var source = document.getElementById(button.dataset.bibtexId);
+      if (source) copyText(source.textContent.trim(), button);
     });
   });
 
