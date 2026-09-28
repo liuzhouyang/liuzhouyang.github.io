@@ -38,6 +38,9 @@ jobs:
             echo "::warning::DBLP refresh failed; using the checked-in publications.yml"
           fi
 
+      - name: Refresh canonical BibTeX
+        run: python scripts/update_citations.py
+
       - name: Generate publication teasers
         run: python scripts/update_teasers.py
 
