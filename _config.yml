@@ -2,7 +2,7 @@
 title: Zhouyang Liu
 position: Postdoc
 affiliation: National University of Defense Technology
-email: liuzhouyang0@gmail.com
+
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
@@ -14,6 +14,7 @@ canonical: https://minimal-light-theme.yliu.me/
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?hl=en&user=_1Q9F0EAAAAJ
 github_link: https://github.com/liuzhouyang
+email: liuzhouyang0@gmail.com
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
