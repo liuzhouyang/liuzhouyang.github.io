@@ -32,7 +32,7 @@ layout: homepage
 
 ## About Me
 
-I am a Postdoctoral Researcher at the **National University of Defense Technology (NUDT)**. I received my Ph.D. in Computer Science from NUDT under the supervision of [**Prof. Dongsheng Li**](https://scholar.google.com/citations?user=_WrK108AAAAJ&hl=en).
+I am a Postdoctoral Researcher at the **National University of Defense Technology (NUDT)**. I received my Ph.D. in Computer Science from NUDT under the supervision of [**Prof. Dongsheng Li** ↗](https://scholar.google.com/citations?user=_WrK108AAAAJ&hl=en).
 
 I work on **graph learning**, with current interests in **open-world graph learning**, **Graph + LLM**, and **AI for Science**. Before that, I spent quite some time on **graph similarity computation**.
 
