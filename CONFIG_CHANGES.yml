@@ -1,0 +1,11 @@
+# Add these changes to your existing _config.yml
+
+# 1) Remove/comment the default avatar if you do not want any avatar:
+# avatar: ./assets/img/avatar.png
+
+# 2) After creating a GoatCounter site, add only your site code:
+# Example: if your dashboard is https://zhouyang.goatcounter.com
+# then use:
+goatcounter_code: YOUR_GOATCOUNTER_CODE
+
+# Do not add a public visitor counter. Statistics stay dashboard-only.
