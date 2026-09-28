@@ -81,49 +81,60 @@
   "teasers": {
     "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance": {
       "image": "/assets/img/publications/gen.png",
-      "source": "https://arxiv.org/pdf/2504.06533",
+      "sources": [
+        "https://arxiv.org/pdf/2504.06533.pdf",
+        "https://export.arxiv.org/pdf/2504.06533.pdf"
+      ],
       "page": 5,
       "crop": [
-        0.075,
-        0.055,
-        0.945,
-        0.255
+        0.05,
+        0.035,
+        0.96,
+        0.225
       ],
       "figure": "Fig. 3"
     },
     "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration": {
       "image": "/assets/img/publications/graph2region.png",
-      "source": "https://arxiv.org/pdf/2510.00394",
+      "sources": [
+        "https://arxiv.org/pdf/2510.00394.pdf",
+        "https://export.arxiv.org/pdf/2510.00394.pdf"
+      ],
       "page": 0,
       "crop": [
-        0.505,
-        0.205,
-        0.945,
-        0.405
+        0.5,
+        0.16,
+        0.96,
+        0.4
       ],
       "figure": "Fig. 1"
     },
     "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure": {
       "image": "/assets/img/publications/nc-iso.png",
-      "source": "https://arxiv.org/pdf/2510.00402",
+      "sources": [
+        "https://arxiv.org/pdf/2510.00402.pdf",
+        "https://export.arxiv.org/pdf/2510.00402.pdf"
+      ],
       "page": 4,
       "crop": [
-        0.535,
-        0.045,
-        0.945,
-        0.195
+        0.5,
+        0.04,
+        0.96,
+        0.22
       ],
       "figure": "Fig. 3"
     },
     "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges": {
       "image": "/assets/img/publications/graph-similarity-survey.png",
-      "source": "https://openreview.net/notes/edits/attachment?id=ytEuCBPncw&name=pdf",
+      "sources": [
+        "https://openreview.net/pdf?id=fHf4jbIfex"
+      ],
       "page": 3,
       "crop": [
-        0.105,
-        0.075,
-        0.895,
-        0.285
+        0.08,
+        0.04,
+        0.93,
+        0.27
       ],
       "figure": "Fig. 1"
     }
