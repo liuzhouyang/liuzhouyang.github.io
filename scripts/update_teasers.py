@@ -193,6 +193,18 @@ def source_for_publication(pub: dict, teaser_cfg: dict | None) -> str:
     return ""
 
 
+def save_publications(publications: list[dict]) -> None:
+    PUBLICATIONS_PATH.write_text(
+        yaml.safe_dump(
+            publications,
+            allow_unicode=True,
+            sort_keys=False,
+            width=1000,
+        ),
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     publications = load_publications()
@@ -204,13 +216,23 @@ def main() -> None:
     ASSET_DIR.mkdir(parents=True, exist_ok=True)
     CANDIDATE_DIR.mkdir(parents=True, exist_ok=True)
 
+    changed_yaml = False
+
     for pub in publications:
         title = str(pub.get("title", "")).strip()
         if not title:
             continue
+
         norm = normalize_title(title)
         teaser_cfg = teaser_cfgs.get(norm)
         source = source_for_publication(pub, teaser_cfg)
+
+        # Never leave a stale/broken image reference behind.
+        if teaser_cfg and teaser_cfg.get("image"):
+            expected = ROOT / str(teaser_cfg["image"]).lstrip("/")
+            if not expected.exists() and pub.pop("image", None) is not None:
+                changed_yaml = True
+
         if not source:
             print(f"Skip teaser for {title}: no PDF source", file=sys.stderr)
             continue
@@ -222,11 +244,11 @@ def main() -> None:
             continue
 
         if teaser_cfg and teaser_cfg.get("crop") is not None:
-            image_path = teaser_cfg.get("image") or pub.get("image")
+            image_path = teaser_cfg.get("image")
             if not image_path:
-                print(f"Skip curated teaser for {title}: no image path", file=sys.stderr)
                 continue
             target = ROOT / str(image_path).lstrip("/")
+
             try:
                 render_crop(
                     pdf,
@@ -238,11 +260,19 @@ def main() -> None:
                     f"Generated curated teaser: {target.relative_to(ROOT)} "
                     f"({teaser_cfg.get('figure', 'manual crop')})"
                 )
+
+                # Only expose the image to Jekyll after it exists.
+                if pub.get("image") != image_path:
+                    pub["image"] = image_path
+                    changed_yaml = True
+
             except Exception as exc:
                 print(f"Warning: teaser render failed for {title}: {exc}", file=sys.stderr)
+                if pub.pop("image", None) is not None:
+                    changed_yaml = True
             continue
 
-        # New selected publication: produce candidates, but do not change the homepage.
+        # New selected publication: produce candidates, but do not change homepage.
         slug = slugify(title)
         out_dir = CANDIDATE_DIR / slug
         if out_dir.exists():
@@ -255,12 +285,19 @@ def main() -> None:
             try:
                 render_crop(pdf, page_index, crop, target, zoom=2.2)
             except Exception as exc:
-                print(f"Warning: candidate render failed for {title} Fig. {fig_no}: {exc}", file=sys.stderr)
+                print(
+                    f"Warning: candidate render failed for {title} Fig. {fig_no}: {exc}",
+                    file=sys.stderr,
+                )
 
         if candidates:
             print(f"Generated {len(candidates)} teaser candidates for new paper: {title}")
         else:
             print(f"No figure-caption candidates found for: {title}", file=sys.stderr)
+
+    if changed_yaml:
+        save_publications(publications)
+        print("Updated publications.yml with only successfully generated teaser paths.")
 
 
 if __name__ == "__main__":

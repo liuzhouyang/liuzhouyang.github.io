@@ -9,7 +9,6 @@
   year: 2026
   pdf: "https://arxiv.org/abs/2504.06533"
   code: "https://github.com/liuzhouyang/GEN"
-  image: "/assets/img/publications/gen.png"
   dblp: "https://dblp.org/rec/conf/icde/LiuLCHML26"
   bibtex: "https://dblp.org/rec/conf/icde/LiuLCHML26.bib"
 - title: "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration"
@@ -20,7 +19,6 @@
   year: 2025
   pdf: "https://arxiv.org/abs/2510.00394"
   code: "https://github.com/liuzhouyang/Graph2Region"
-  image: "/assets/img/publications/graph2region.png"
   dblp: "https://dblp.org/rec/journals/tkde/LiuCLHL25"
   bibtex: "https://dblp.org/rec/journals/tkde/LiuCLHL25.bib"
 - title: "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure"
@@ -31,7 +29,6 @@
   year: 2025
   pdf: "https://arxiv.org/abs/2510.00402"
   code: "https://github.com/liuzhouyang/NC-Iso"
-  image: "/assets/img/publications/nc-iso.png"
   dblp: "https://dblp.org/rec/journals/tkde/LiuLCHJL25"
   bibtex: "https://dblp.org/rec/journals/tkde/LiuLCHJL25.bib"
 - title: "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges"
@@ -41,6 +38,5 @@
   conference: "Transactions on Machine Learning Research"
   year: 2025
   code: "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey"
-  image: "/assets/img/publications/graph-similarity-survey.png"
   dblp: "https://dblp.org/rec/journals/tmlr/Liu00WH025"
   bibtex: "https://dblp.org/rec/journals/tmlr/Liu00WH025.bib"

@@ -224,12 +224,22 @@ def apply_manual_and_overrides(records: list[dict], cfg: dict) -> list[dict]:
 
 
 def apply_teaser_paths(records: list[dict], cfg: dict) -> list[dict]:
-    """Attach stable teaser image paths chosen by the site owner."""
+    """Attach teaser paths only when the image file actually exists.
+
+    This prevents broken-image placeholders on a fresh clone or when a remote
+    PDF cannot be downloaded during a workflow run.
+    """
     by_norm = {normalize_title(r["title"]): r for r in records}
     for title, teaser in cfg.get("teasers", {}).items():
         r = by_norm.get(normalize_title(title))
-        if r and teaser.get("image"):
-            r["image"] = teaser["image"]
+        image_path = teaser.get("image", "")
+        if not r or not image_path:
+            continue
+        local_path = ROOT / image_path.lstrip("/")
+        if local_path.exists():
+            r["image"] = image_path
+        else:
+            r.pop("image", None)
     return records
 
 
