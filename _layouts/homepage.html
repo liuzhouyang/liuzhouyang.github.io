@@ -13,8 +13,8 @@
   <link rel="canonical" href="{{ site.canonical }}"/>
   {% endif %}
 
-  <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
-  <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
+  <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/svg+xml" />
+  <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/svg+xml" />
   <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
   <link rel="stylesheet"
@@ -58,7 +58,7 @@
     {% endif %}
 
     {% if site.affiliation %}
-    <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+    <autocolor>{{ site.affiliation }}</autocolor>
     <br>
     {% endif %}
 
