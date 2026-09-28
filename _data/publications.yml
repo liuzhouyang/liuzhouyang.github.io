@@ -40,4 +40,4 @@
   code: "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey"
   dblp: "https://dblp.org/rec/journals/tmlr/Liu00WH025"
   bibtex: "https://dblp.org/rec/journals/tmlr/Liu00WH025.html?view=bibtex&param=1"
-  copy_bibtex: "@article{\nliu2025graph,\ntitle={Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges},\nauthor={Zhouyang LIU and Ning Liu and Yixin Chen and Ziqing Wen and Jiezhong He and Dongsheng Li},\njournal={Transactions on Machine Learning Research},\nissn={2835-8856},\nyear={2025},\nurl={https://openreview.net/forum?id=fHf4jbIfex},\nnote={Survey Certification}\n}"
+

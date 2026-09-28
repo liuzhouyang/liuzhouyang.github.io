@@ -50,28 +50,73 @@
       "date": "2026-05",
       "paper": "https://arxiv.org/abs/2504.06533",
       "code": "https://github.com/liuzhouyang/GEN",
-      "citation_doi": "10.1109/ICDE65706.2026.00111"
+      "copy_bibtex": "@inproceedings{liu2026gen,\n  author    = {Liu, Zhouyang and Liu, Ning and Chen, Yixin and He, Jiezhong and Ma, Shuai and Li, Dongsheng},\n  title     = {Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance},\n  booktitle = {2026 IEEE 42nd International Conference on Data Engineering (ICDE)},\n  pages     = {1435--1448},\n  year      = {2026},\n  doi       = {10.1109/ICDE65706.2026.00111}\n}",
+      "citation_expect": {
+        "type": "inproceedings",
+        "key": "liu2026gen",
+        "author": "Liu, Zhouyang and Liu, Ning and Chen, Yixin and He, Jiezhong and Ma, Shuai and Li, Dongsheng",
+        "title": "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance",
+        "booktitle": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+        "pages": "1435--1448",
+        "year": "2026",
+        "doi": "10.1109/ICDE65706.2026.00111"
+      }
     },
     "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration": {
       "short_title": "Graph2Region",
       "date": "2025-12",
       "paper": "https://arxiv.org/abs/2510.00394",
       "code": "https://github.com/liuzhouyang/Graph2Region",
-      "citation_doi": "10.1109/TKDE.2025.3617461"
+      "copy_bibtex": "@article{liu2025graph2region,\n  author  = {Liu, Zhouyang and Chen, Yixin and Liu, Ning and He, Jiezhong and Li, Dongsheng},\n  title   = {Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration},\n  journal = {IEEE Transactions on Knowledge and Data Engineering},\n  volume  = {37},\n  number  = {12},\n  pages   = {7213--7225},\n  year    = {2025},\n  doi     = {10.1109/TKDE.2025.3617461}\n}",
+      "citation_expect": {
+        "type": "article",
+        "key": "liu2025graph2region",
+        "author": "Liu, Zhouyang and Chen, Yixin and Liu, Ning and He, Jiezhong and Li, Dongsheng",
+        "title": "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration",
+        "journal": "IEEE Transactions on Knowledge and Data Engineering",
+        "volume": "37",
+        "number": "12",
+        "pages": "7213--7225",
+        "year": "2025",
+        "doi": "10.1109/TKDE.2025.3617461"
+      }
     },
     "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure": {
       "short_title": "NC-Iso",
       "date": "2025-09",
       "paper": "https://arxiv.org/abs/2510.00402",
       "code": "https://github.com/liuzhouyang/NC-Iso",
-      "citation_doi": "10.1109/TKDE.2025.3583003"
+      "copy_bibtex": "@article{liu2025nciso,\n  author  = {Liu, Zhouyang and Liu, Ning and Chen, Yixin and He, Jiezhong and Jia, Menghan and Li, Dongsheng},\n  title   = {Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure},\n  journal = {IEEE Transactions on Knowledge and Data Engineering},\n  volume  = {37},\n  number  = {9},\n  pages   = {5298--5310},\n  year    = {2025},\n  doi     = {10.1109/TKDE.2025.3583003}\n}",
+      "citation_expect": {
+        "type": "article",
+        "key": "liu2025nciso",
+        "author": "Liu, Zhouyang and Liu, Ning and Chen, Yixin and He, Jiezhong and Jia, Menghan and Li, Dongsheng",
+        "title": "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure",
+        "journal": "IEEE Transactions on Knowledge and Data Engineering",
+        "volume": "37",
+        "number": "9",
+        "pages": "5298--5310",
+        "year": "2025",
+        "doi": "10.1109/TKDE.2025.3583003"
+      }
     },
     "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges": {
       "short_title": "Graph Similarity Survey",
       "date": "2025-05",
       "code": "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey",
       "paper": "https://openreview.net/forum?id=fHf4jbIfex",
-      "copy_bibtex": "@article{\nliu2025graph,\ntitle={Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges},\nauthor={Zhouyang LIU and Ning Liu and Yixin Chen and Ziqing Wen and Jiezhong He and Dongsheng Li},\njournal={Transactions on Machine Learning Research},\nissn={2835-8856},\nyear={2025},\nurl={https://openreview.net/forum?id=fHf4jbIfex},\nnote={Survey Certification}\n}"
+      "copy_bibtex": "@article{liu2025graph,\n  title   = {Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges},\n  author  = {Zhouyang LIU and Ning Liu and Yixin Chen and Ziqing Wen and Jiezhong He and Dongsheng Li},\n  journal = {Transactions on Machine Learning Research},\n  issn    = {2835-8856},\n  year    = {2025},\n  url     = {https://openreview.net/forum?id=fHf4jbIfex},\n  note    = {Survey Certification}\n}",
+      "citation_expect": {
+        "type": "article",
+        "key": "liu2025graph",
+        "author": "Zhouyang LIU and Ning Liu and Yixin Chen and Ziqing Wen and Jiezhong He and Dongsheng Li",
+        "title": "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges",
+        "journal": "Transactions on Machine Learning Research",
+        "issn": "2835-8856",
+        "year": "2025",
+        "url": "https://openreview.net/forum?id=fHf4jbIfex",
+        "note": "Survey Certification"
+      }
     }
   },
   "venue_shortcuts": {
