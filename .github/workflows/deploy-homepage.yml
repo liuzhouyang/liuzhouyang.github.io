@@ -32,7 +32,11 @@ jobs:
         run: python -m pip install --upgrade pymupdf pillow pyyaml
 
       - name: Refresh selected publications
-        run: python scripts/update_publications.py
+        shell: bash
+        run: |
+          if ! python scripts/update_publications.py; then
+            echo "::warning::DBLP refresh failed; using the checked-in publications.yml"
+          fi
 
       - name: Generate publication teasers
         run: python scripts/update_teasers.py
