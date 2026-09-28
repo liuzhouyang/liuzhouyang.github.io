@@ -10,7 +10,7 @@ My previous research mainly focused on **graph similarity computation**. I am cu
 
 I am always open to research collaborations. Feel free to contact me if you are interested in working together.
 
-**Prospective students:** If you are interested in joining our group, please contact [**Prof. Dongsheng Li**](https://scholar.google.com/citations?user=_WrK108AAAAJ&hl=en) directly.
+**Prospective students:** If you are interested in joining our group or working on related research topics, feel free to contact me with your CV and a brief description of your research interests.
 
 ## Research
 
