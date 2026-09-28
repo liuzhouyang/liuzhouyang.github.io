@@ -1,0 +1,131 @@
+{
+  "dblp_pid": "332/8613",
+  "github_user": "liuzhouyang",
+  "author_name": "Zhouyang Liu",
+  "max_items": 4,
+  "pinned_titles": [
+    "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance",
+    "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration",
+    "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure",
+    "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges"
+  ],
+  "auto_keywords": [
+    "graph",
+    "llm",
+    "language model",
+    "traffic",
+    "spatio-temporal",
+    "spatiotemporal",
+    "foundation model",
+    "scientific"
+  ],
+  "exclude_title_contains": [
+    "Extended Abstract",
+    "Flexible Graph Similarity Computation With A Proactive Optimization Strategy",
+    "A Multi-Resolution Multi-Domain Pre-Training Framework for Universal Traffic Forecasting",
+    "Revealing Modular Gradient Noise Imbalance in LLMs: Calibrating Adam via Signal-to-Noise Ratio"
+  ],
+  "manual_records": [
+    {
+      "title": "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges",
+      "short_title": "Graph Similarity Survey",
+      "authors": [
+        "Zhouyang Liu",
+        "Ning Liu",
+        "Yixin Chen",
+        "Ziqing Wen",
+        "Jiezhong He",
+        "Dongsheng Li"
+      ],
+      "venue": "TMLR",
+      "year": 2025,
+      "date": "2025-05",
+      "paper": "https://openreview.net/forum?id=fHf4jbIfex",
+      "code": "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey"
+    }
+  ],
+  "overrides": {
+    "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance": {
+      "short_title": "GEN",
+      "date": "2026-05",
+      "paper": "https://arxiv.org/abs/2504.06533",
+      "code": "https://github.com/liuzhouyang/GEN"
+    },
+    "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration": {
+      "short_title": "Graph2Region",
+      "date": "2025-12",
+      "paper": "https://arxiv.org/abs/2510.00394",
+      "code": "https://github.com/liuzhouyang/Graph2Region"
+    },
+    "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure": {
+      "short_title": "NC-Iso",
+      "date": "2025-09",
+      "paper": "https://arxiv.org/abs/2510.00402",
+      "code": "https://github.com/liuzhouyang/NC-Iso"
+    },
+    "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges": {
+      "short_title": "Graph Similarity Survey",
+      "date": "2025-05",
+      "code": "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey",
+      "paper": "https://openreview.net/forum?id=fHf4jbIfex"
+    }
+  },
+  "venue_shortcuts": {
+    "IEEE Trans. Knowl. Data Eng.": "IEEE TKDE",
+    "Trans. Mach. Learn. Res.": "TMLR",
+    "Knowl. Inf. Syst.": "KAIS",
+    "ICDE": "IEEE ICDE",
+    "ICDM": "IEEE ICDM",
+    "IJCAI": "IJCAI"
+  },
+  "teasers": {
+    "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance": {
+      "image": "/assets/img/publications/gen.png",
+      "source": "https://arxiv.org/pdf/2504.06533",
+      "page": 5,
+      "crop": [
+        0.075,
+        0.055,
+        0.945,
+        0.255
+      ],
+      "figure": "Fig. 3"
+    },
+    "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration": {
+      "image": "/assets/img/publications/graph2region.png",
+      "source": "https://arxiv.org/pdf/2510.00394",
+      "page": 0,
+      "crop": [
+        0.505,
+        0.205,
+        0.945,
+        0.405
+      ],
+      "figure": "Fig. 1"
+    },
+    "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure": {
+      "image": "/assets/img/publications/nc-iso.png",
+      "source": "https://arxiv.org/pdf/2510.00402",
+      "page": 4,
+      "crop": [
+        0.535,
+        0.045,
+        0.945,
+        0.195
+      ],
+      "figure": "Fig. 3"
+    },
+    "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges": {
+      "image": "/assets/img/publications/graph-similarity-survey.png",
+      "source": "https://openreview.net/notes/edits/attachment?id=ytEuCBPncw&name=pdf",
+      "page": 3,
+      "crop": [
+        0.105,
+        0.075,
+        0.895,
+        0.285
+      ],
+      "figure": "Fig. 1"
+    }
+  }
+}
