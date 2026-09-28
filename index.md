@@ -4,19 +4,29 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a Postdoctoral Researcher at the **National University of Defense Technology (NUDT)**. I received my Ph.D. in Computer Science from NUDT under the supervision of Prof. Dongsheng Li.
 
-## Research Interests
+My previous research mainly focused on **graph similarity computation**. I am currently interested in **open-world graph learning**, **Graph + LLM**, and **AI for Science**.
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+I am always open to research collaborations. Feel free to contact me if you are interested in working together.
 
-## News
+**Prospective students:** If you are interested in working with our group, feel free to email me with your **CV** and a brief description of your research interests.
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+## Research
+
+My research interests include:
+
+- Open-World Graph Learning
+- Graph + LLM
+- Graph Similarity
+- AI for Science
+
+## Recent Updates
+
+- **[Sep. 2026]** **FlexST** was accepted to **IEEE ICDM 2026**. [Paper]
+- **[May 2026]** **GEN**, our work on one-step alignment for flexible graph similarity computation, was published at **IEEE ICDE 2026**. [Paper] [DBLP]
+- **[May 2026]** **MoLS**, our work on module-wise optimization for LLMs, was accepted to **IJCAI 2026**. [Paper]
+- **[Jan. 2026]** I joined **NUDT** as a Postdoctoral Researcher.
 
 {% include_relative _includes/publications.md %}
 
