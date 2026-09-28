@@ -92,6 +92,16 @@
       {% if item.code %}&nbsp;<a href="{{ item.code }}" target="_blank" rel="noopener" data-goatcounter-click="code-{{ item.short_title | slugify }}">[Code]</a>{% endif %}
       {% if item.dblp %}&nbsp;<a href="{{ item.dblp }}" target="_blank" rel="noopener" data-goatcounter-click="dblp-{{ item.short_title | slugify }}">[DBLP]</a>{% endif %}
       {% if item.bibtex %}&nbsp;<a href="{{ item.bibtex }}" target="_blank" rel="noopener" data-goatcounter-click="bibtex-{{ item.short_title | slugify }}">[BibTeX]</a>{% endif %}
+      &nbsp;<button
+        type="button"
+        class="inline-copy copy-bibtex"
+        data-bib-key="{{ item.short_title | slugify }}"
+        data-bib-title="{{ item.title | strip_html | escape }}"
+        data-bib-authors="{{ item.authors | strip_html | escape }}"
+        data-bib-venue="{{ item.conference_short | strip_html | escape }}"
+        data-bib-year="{{ item.year }}"
+        data-bib-url="{{ item.pdf | escape }}"
+        data-goatcounter-click="copy-bibtex-{{ item.short_title | slugify }}">[Copy BibTeX]</button>
     </div>
   </div>
 </div>

@@ -1,0 +1,73 @@
+.inline-copy {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 0.93em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.inline-copy:hover {
+  color: #b22222;
+}
+
+.copy-email {
+  margin-left: 0.3rem;
+  font-size: 0.78rem;
+  opacity: 0.72;
+}
+
+.copy-email:hover {
+  opacity: 1;
+}
+
+#back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(80, 80, 80, 0.22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #555;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+#back-to-top.visible {
+  opacity: 0.78;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#back-to-top:hover {
+  opacity: 1;
+  color: #b22222;
+}
+
+@media (prefers-color-scheme: dark) {
+  #back-to-top {
+    background: rgba(30, 30, 30, 0.92);
+    color: #bbb;
+    border-color: rgba(220, 220, 220, 0.18);
+  }
+}
+
+@media (max-width: 640px) {
+  #back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+}
