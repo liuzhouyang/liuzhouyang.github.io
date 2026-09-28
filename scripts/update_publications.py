@@ -151,7 +151,7 @@ def parse_dblp(xml_bytes: bytes, cfg: dict) -> list[dict]:
                 "paper": paper,
                 "dblp_key": key,
                 "dblp": f"https://dblp.org/rec/{key}" if key else "",
-                "bibtex": f"https://dblp.org/rec/{key}.bib" if key else "",
+                "bibtex": f"https://dblp.org/rec/{key}.html?view=bibtex&param=1" if key else "",
             }
         )
     return out
@@ -385,21 +385,6 @@ def render_authors(names: list[str], me: str) -> str:
 
 
 
-def fetch_bibtex_text(record: dict) -> str:
-    """Fetch the exact DBLP BibTeX export and store it for inline display."""
-    url = record.get("bibtex", "")
-    if not url:
-        return ""
-    try:
-        data = fetch(url)
-        return data.decode("utf-8", errors="replace").strip()
-    except Exception as exc:
-        print(
-            f"Warning: could not fetch BibTeX for {record.get('title', '')}: {exc}",
-            file=sys.stderr,
-        )
-        return ""
-
 
 def write_yaml(records: list[dict], cfg: dict) -> None:
     lines = [
@@ -428,12 +413,8 @@ def write_yaml(records: list[dict], cfg: dict) -> None:
             lines.append(f"  image: {yaml_quote(r['image'])}")
         if r.get("dblp"):
             lines.append(f"  dblp: {yaml_quote(r['dblp'])}")
-        bibtex_text = r.get("bibtex_text", "")
-        if bibtex_text:
-            # YAML block scalar keeps the full BibTeX human-readable and copyable.
-            lines.append("  bibtex_text: |")
-            for bib_line in bibtex_text.splitlines():
-                lines.append(f"    {bib_line}")
+        if r.get("bibtex"):
+            lines.append(f"  bibtex: {yaml_quote(r['bibtex'])}")
         lines.append("")
     OUTPUT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
@@ -454,9 +435,6 @@ def main() -> None:
     selected = select_records(records, cfg)
     if not selected:
         raise RuntimeError("No publications were selected; refusing to overwrite output.")
-
-    for record in selected:
-        record["bibtex_text"] = fetch_bibtex_text(record)
 
     write_yaml(selected, cfg)
     print(f"Wrote {len(selected)} selected publications to {OUTPUT_PATH.relative_to(ROOT)}")

@@ -10,6 +10,7 @@
   pdf: "https://arxiv.org/abs/2504.06533"
   code: "https://github.com/liuzhouyang/GEN"
   dblp: "https://dblp.org/rec/conf/icde/LiuLCHML26"
+  bibtex: "https://dblp.org/rec/conf/icde/LiuLCHML26.html?view=bibtex&param=1"
 - title: "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration"
   short_title: "Graph2Region"
   authors: "<strong>Zhouyang Liu</strong>, Yixin Chen, Ning Liu, Jiezhong He, Dongsheng Li"
@@ -19,6 +20,7 @@
   pdf: "https://arxiv.org/abs/2510.00394"
   code: "https://github.com/liuzhouyang/Graph2Region"
   dblp: "https://dblp.org/rec/journals/tkde/LiuCLHL25"
+  bibtex: "https://dblp.org/rec/journals/tkde/LiuCLHL25.html?view=bibtex&param=1"
 - title: "Hierarchy-Aware Neural Subgraph Matching With Enhanced Similarity Measure"
   short_title: "NC-Iso"
   authors: "<strong>Zhouyang Liu</strong>, Ning Liu, Yixin Chen, Jiezhong He, Menghan Jia, Dongsheng Li"
@@ -28,6 +30,7 @@
   pdf: "https://arxiv.org/abs/2510.00402"
   code: "https://github.com/liuzhouyang/NC-Iso"
   dblp: "https://dblp.org/rec/journals/tkde/LiuLCHJL25"
+  bibtex: "https://dblp.org/rec/journals/tkde/LiuLCHJL25.html?view=bibtex&param=1"
 - title: "Graph Theory-Based Deep Graph Similarity Learning: A Unified Survey of Pipeline, Techniques, and Challenges"
   short_title: "Graph Similarity Survey"
   authors: "<strong>Zhouyang Liu</strong>, Ning Liu, Yixin Chen, Ziqing Wen, Jiezhong He, Dongsheng Li"
@@ -36,3 +39,4 @@
   year: 2025
   code: "https://github.com/liuzhouyang/Graph-Theory-Based-Deep-Graph-Similarity-Learning-Survey"
   dblp: "https://dblp.org/rec/journals/tmlr/Liu00WH025"
+  bibtex: "https://dblp.org/rec/journals/tmlr/Liu00WH025.html?view=bibtex&param=1"
