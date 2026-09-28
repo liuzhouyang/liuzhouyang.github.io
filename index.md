@@ -2,6 +2,34 @@
 layout: homepage
 ---
 
+<style>
+.section-nav {
+  margin: 0.1rem 0 1.45rem 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #777;
+}
+.section-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.section-nav a:hover {
+  color: #b22222;
+}
+.section-nav .sep {
+  margin: 0 0.38rem;
+  color: #bbb;
+}
+</style>
+
+<nav class="section-nav" aria-label="Section navigation">
+  <a href="#about-me">About</a><span class="sep">·</span>
+  <a href="#research">Research</a><span class="sep">·</span>
+  <a href="#recent-updates">Updates</a><span class="sep">·</span>
+  <a href="#selected-publications">Publications</a><span class="sep">·</span>
+  <a href="#professional-services">Service</a>
+</nav>
+
 ## About Me
 
 I am a Postdoctoral Researcher at the **National University of Defense Technology (NUDT)**. I received my Ph.D. in Computer Science from NUDT under the supervision of [**Prof. Dongsheng Li**](https://scholar.google.com/citations?user=_WrK108AAAAJ&hl=en).
