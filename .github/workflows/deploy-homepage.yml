@@ -1,0 +1,85 @@
+name: Build and deploy homepage
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install publication dependencies
+        run: python -m pip install --upgrade pymupdf pillow pyyaml
+
+      - name: Refresh selected publications
+        run: python scripts/update_publications.py
+
+      - name: Generate publication teasers
+        run: python scripts/update_teasers.py
+
+      - name: Verify teaser files
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -s assets/img/publications/gen.png
+          test -s assets/img/publications/graph2region.png
+          test -s assets/img/publications/nc-iso.png
+          test -s assets/img/publications/graph-similarity-survey.png
+          file assets/img/publications/*.png
+          ls -lh assets/img/publications/*.png
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Verify teasers in built site
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -s _site/assets/img/publications/gen.png
+          test -s _site/assets/img/publications/graph2region.png
+          test -s _site/assets/img/publications/nc-iso.png
+          test -s _site/assets/img/publications/graph-similarity-survey.png
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
