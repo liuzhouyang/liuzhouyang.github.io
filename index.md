@@ -6,11 +6,11 @@ layout: homepage
 
 I am a Postdoctoral Researcher at the **National University of Defense Technology (NUDT)**. I received my Ph.D. in Computer Science from NUDT under the supervision of [**Prof. Dongsheng Li**](https://scholar.google.com/citations?user=_WrK108AAAAJ&hl=en).
 
-My previous research mainly focused on **graph similarity computation**. I am currently interested in **open-world graph learning**, **Graph + LLM**, and **AI for Science**.
+I work on **graph learning**, with current interests in **open-world graph learning**, **Graph + LLM**, and **AI for Science**. Before that, I spent quite some time on **graph similarity computation**.
 
-I am always open to research collaborations. Feel free to contact me if you are interested in working together.
+I am always happy to chat about research ideas — polished or half-baked. If you are interested in collaborating, just drop me an email.
 
-**Prospective students:** If you are interested in joining our group or working on related research topics, feel free to contact me with your CV and a brief description of your research interests.
+**Prospective students:** If you are interested in working with me, send me your **CV** and a few lines about what you would like to work on.
 
 ## Research
 
