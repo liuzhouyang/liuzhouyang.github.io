@@ -48,6 +48,7 @@ My research interests include:
 - Graph + LLM
 - Graph Similarity
 - AI for Science
+- AI Security
 
 ## Recent Updates
 
