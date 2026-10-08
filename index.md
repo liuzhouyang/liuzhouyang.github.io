@@ -52,6 +52,7 @@ My research interests include:
 
 ## Recent Updates
 
+- **[Oct. 2026]** We released **GSCBench**, a benchmark for evaluating the generalization of neural graph edit distance models across graph collections. [[Paper](https://arxiv.org/abs/2610.04644)] [[Code](https://github.com/liuzhouyang/GSCBench)] [[Data](https://huggingface.co/datasets/ush3r/GSCbench)]
 - **[Sep. 2026]** **FlexST**, our work on multi-domain pre-training for universal traffic forecasting, was accepted to **IEEE ICDM 2026**. [[Paper](https://arxiv.org/abs/2609.13878)] [[Code](https://github.com/liuzhouyang/FlexST)]
 - **[May 2026]** **GEN**, our work on one-step alignment for flexible graph similarity computation, was published at **IEEE ICDE 2026**. [[Paper](https://arxiv.org/abs/2504.06533)] [[Code](https://github.com/liuzhouyang/GEN)]
 - **[May 2026]** **MoLS**, our work on module-wise optimization for LLMs, was accepted to **IJCAI 2026**. [[Paper](https://arxiv.org/abs/2605.05794)]
